@@ -1,0 +1,16 @@
+[package]
+name = "pill_game"
+version = "0.1.0"
+edition = "2021"
+workspace = "/Users/mk/dev/demo/Pill-Engine-Upstream/engine"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+benchmark = []
+
+[dependencies]
+pill_engine = { path = "/Users/mk/dev/demo/Pill-Engine-Upstream/engine/pill_engine", features = ["game", "internal"] }
+rand = "0.8"
+cgmath = "0.18"
