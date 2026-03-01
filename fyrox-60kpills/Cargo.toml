@@ -1,0 +1,14 @@
+[package]
+name = "fyrox_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fyrox = "1.0.0-rc.1"
+rand = "0.8"
+
+[profile.release]
+opt-level = "s"
+codegen-units = 1
+lto = "thin"
+strip = true
